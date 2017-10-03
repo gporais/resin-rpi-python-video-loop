@@ -7,7 +7,7 @@ FROM resin/raspberrypi3-python
 # RUN apt-get update && apt-get install -yq \
 #    alsa-utils libasound2-dev && \
 #    apt-get clean && rm -rf /var/lib/apt/lists/*
-RUN apt-get update && apt-get install -y libdbus-1{,-dev}
+RUN apt-get update && apt-get install -y libdbus-1
 
 # Set our working directory
 WORKDIR /usr/src/app
