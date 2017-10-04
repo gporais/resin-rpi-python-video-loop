@@ -2,12 +2,10 @@
 # see more about dockerfile templates here:http://docs.resin.io/pages/deployment/docker-templates
 FROM resin/raspberrypi3-python
 
-# use apt-get if you need to install dependencies,
-# for instance if you need ALSA sound utils, just uncomment the lines below.
-# RUN apt-get update && apt-get install -yq \
-#    alsa-utils libasound2-dev && \
-#    apt-get clean && rm -rf /var/lib/apt/lists/*
-RUN apt-get update && apt-get install -y omxplayer
+# use apt-get if you need to install dependencies
+RUN apt-get update && apt-get install -yq \
+    omxplayer && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Set our working directory
 WORKDIR /usr/src/app
