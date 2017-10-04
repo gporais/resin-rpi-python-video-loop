@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python2
 
 from omxplayer import OMXPlayer
 #from pathlib import Path
@@ -8,6 +8,7 @@ from omxplayer import OMXPlayer
 
 #player = OMXPlayer(VIDEO_PATH)
 player = OMXPlayer('../media/test2.mp4', args=['-o', 'local', '--loop', '--no-osd'])
+player.play()
 #vid.play()
 
 # sleep(5)
