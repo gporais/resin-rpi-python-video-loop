@@ -29,5 +29,5 @@
 # omxp = Popen(['omxplayer', '-o', 'local', '--loop', '--no-osd' , '../media/test1.mp4'])
 
 import os
-
+os.system("pwd")
 os.system("omxplayer -o local --loop --no-osd ../media/test1.mp4")
