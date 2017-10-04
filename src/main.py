@@ -22,8 +22,12 @@
 
 # movie_path = '../media/test2.mp4'
 
-from subprocess import Popen
+# from subprocess import Popen
 
 # omxp = Popen(['omxplayer', '-o', 'local', '--loop', '--no-osd' , '../media/test2.mp4'])
 
-omxp = Popen(['omxplayer', '-o', 'local', '--loop', '--no-osd' , '../media/test1.mp4'])
+# omxp = Popen(['omxplayer', '-o', 'local', '--loop', '--no-osd' , '../media/test1.mp4'])
+
+import os
+
+os.system("omxplayer -o local --loop --no-osd ../media/test1.mp4")
