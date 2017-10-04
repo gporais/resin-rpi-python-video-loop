@@ -17,11 +17,11 @@
 #player.quit()
 
 
-import sys
-print (sys.version_info)
+# import sys
+# print (sys.version_info)
 
-movie_path = '../media/test2.mp4'
+# movie_path = '../media/test2.mp4'
 
 from subprocess import Popen
 
-omxp = Popen(['omxplayer', '-o', 'local', '--loop', '--no-osd' ,movie_path])
+omxp = Popen(['omxplayer', '-o', 'local', '--loop', '--no-osd' , '../media/test2.mp4'])
