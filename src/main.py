@@ -20,7 +20,7 @@
 import sys
 print (sys.version_info)
 
-movie_path = './media/test2.mp4'
+movie_path = '../media/test2.mp4'
 
 from subprocess import Popen
 
